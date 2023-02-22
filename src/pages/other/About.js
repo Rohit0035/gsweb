@@ -19,7 +19,7 @@ const About = ({ location }) => {
   return (
     <Fragment>
       {/* <MetaTags>
-        <title>NEXUS PAY</title>
+        <title>GSD100</title>
         <meta
           name="description"
           content=""

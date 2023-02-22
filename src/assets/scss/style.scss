@@ -320,7 +320,7 @@ i.pe-7s-phone.circle-1.active {
   i {
     font-size: 25px;
     font-weight: 700;
-    color: #ff5722;
+    color: #ff9800;
     margin-right: 4px;
   }
   span {
@@ -353,7 +353,7 @@ i.pe-7s-phone.circle-1.active {
 a.darktext {
   font-weight: bold !important;
   font-size: 15px !important;
-  color: #ff5722 !important;
+  color: #ff9800 !important;
 }
 
 // depositcoin
@@ -369,7 +369,7 @@ span.ex-btn {
   float: right;
 }
 button.btn-expand.btn.btn- {
-  background: #ff5722;
+  background: #ff9800;
   color: #fff;
   font-weight: 600;
   border: none;
@@ -383,7 +383,7 @@ select.form-control.select-st {
 }
 .qr-box {
   padding: 20px 20px;
-  border: 1px solid #ff5722;
+  border: 1px solid #ff9800;
   margin-bottom: 20px;
 }
 .qr-box ol {
@@ -397,7 +397,7 @@ select.form-control.select-st {
 .cod-1 {
   p {
     font-size: 12px;
-    background: #ff5722;
+    background: #ff9800;
     width: fit-content;
     color: #fff;
     padding: 2px 6px;
@@ -406,7 +406,7 @@ select.form-control.select-st {
 }
 .cod-1 {
   button {
-    background: #ff5722;
+    background: #ff9800;
     color: #fff;
     font-size: 14px;
     border: none;
@@ -485,7 +485,7 @@ p.ftt-2 {
 
 // amt text
 a.st-amt {
-  background: #ff5722;
+  background: #ff9800;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
@@ -523,7 +523,7 @@ p.tb-status {
   font-weight: 400;
 }
 a.backdeposit {
-  background: #ff5722;
+  background: #ff9800;
   color: #fff;
   font-weight: 700;
   padding: 12px 24px;
@@ -701,4 +701,33 @@ a.delicin {
   font-size: 36px;
   font-weight: 600;
   color: #fff;
+}
+
+.slider-height-2 {
+  height: 600px;
+  background-size: cover !important;
+}
+
+.slider-btn-brown a {
+  background-color: #ff9800;
+}
+
+.main-menu nav ul {
+  display: block;
+  margin-top: -1px;
+  text-align: center;
+}
+.bx-coach {
+  text-align: center;
+  background: #2d2a2a;
+  border-radius: 10px;
+  padding: 18px 10px;
+  height: 270px;
+  margin-top: 20px;
+  p {
+    color: #fff;
+  }
+  h3 {
+    font-size: 18px;
+  }
 }

@@ -23,9 +23,9 @@ export default class MyAccount extends Component {
       pincode: "",
       city: "",
       state: "",
-      password:"",
-      cnfrmPassword:"",
-      oldPassword:""
+      password: "",
+      cnfrmPassword: "",
+      oldPassword: "",
     };
   }
 
@@ -44,7 +44,6 @@ export default class MyAccount extends Component {
           lastname: response.data.data.lastname,
           email: response.data.data.email,
           mobile: response.data.data.mobile,
-
         });
         // this.state
         console.log(this.state);
@@ -88,19 +87,19 @@ export default class MyAccount extends Component {
       .then((response) => {
         console.log(response.data);
         console.log(response.data.STATUSMSG);
-        if(response.data.STATUSMSG !== "Failed" && response.data.STATUSMSG !== "Failed" ){
+        if (
+          response.data.STATUSMSG !== "Failed" &&
+          response.data.STATUSMSG !== "Failed"
+        ) {
           swal("Success!", "Account  Updated ", "success");
-        }
-        else {
+        } else {
           swal("Error!", "Account Not Updated", "error");
         }
       })
       .catch((error) => {
         console.log(error.response);
       });
-
   };
-
 
   addAddress = (e) => {
     e.preventDefault();
@@ -121,41 +120,40 @@ export default class MyAccount extends Component {
 
   editPassword = (e) => {
     e.preventDefault();
-     console.log(this.state);
-     axiosConfig
-       .post("/user/updatePassword", this.state, {
+    console.log(this.state);
+    axiosConfig
+      .post("/user/updatePassword", this.state, {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
-         },
-        })
+        },
+      })
       .then((response) => {
-         console.log(response.data.STATUSMSG);
-        if(response.data.msg == "success"  && response.data.msg === "success" ){
-           swal("Success!", "Password Updated Successfully.. ", "success");
-           this.props.history.push("/");
-        }
-         else {
-         swal("Error!", "Password Not Updated", "error");
+        console.log(response.data.STATUSMSG);
+        if (response.data.msg == "success" && response.data.msg === "success") {
+          swal("Success!", "Password Updated Successfully.. ", "success");
+          this.props.history.push("/");
+        } else {
+          swal("Error!", "Password Not Updated", "error");
           // swal("Warning!", response.data.errortext, "warning");
         }
       })
-        .catch((error) => {
-         console.log(error.response.msg == "error" && error.response.msg === "error");
-         swal("Error!", "Password Not Updated", "error");
+      .catch((error) => {
+        console.log(
+          error.response.msg == "error" && error.response.msg === "error"
+        );
+        swal("Error!", "Password Not Updated", "error");
       });
-   };
+  };
 
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
- 
-
   render() {
     return (
       <Fragment>
         <MetaTags>
-          <title>NEXUS PAY</title>
+          <title>GSD100</title>
           <meta
             name="description"
             content="Compare page of flone react minimalist eCommerce template."
@@ -240,7 +238,6 @@ export default class MyAccount extends Component {
                                   />
                                 </div>
                               </div>
-                             
                             </div>
                             <div className="billing-back-btn">
                               <div className="billing-btn">
@@ -253,7 +250,7 @@ export default class MyAccount extends Component {
                       {/* </Accordion.Collapse> */}
                     </Card>
 
-                     <Card className="single-my-account mb-20">
+                    <Card className="single-my-account mb-20">
                       <Card.Body>
                         <Form onSubmit={this.editPassword}>
                           <div className="myaccount-info-wrapper">
@@ -297,7 +294,6 @@ export default class MyAccount extends Component {
                                   />
                                 </div>
                               </div>
-                             
                             </div>
                             <div className="billing-back-btn">
                               <div className="billing-btn">
@@ -307,9 +303,9 @@ export default class MyAccount extends Component {
                           </div>
                         </Form>
                       </Card.Body>
-                      </Card> 
-                   
-                     <Card className="single-my-account mb-20">
+                    </Card>
+
+                    <Card className="single-my-account mb-20">
                       <Card.Body>
                         <Form onSubmit={this.addAddress}>
                           <div className="myaccount-info-wrapper">
@@ -386,7 +382,7 @@ export default class MyAccount extends Component {
                           </div>
                         </Form>
                       </Card.Body>
-                       {/* </Accordion.Collapse> */}
+                      {/* </Accordion.Collapse> */}
                     </Card>
                     <Card className="single-my-account mb-20">
                       <Card.Body>
@@ -404,7 +400,7 @@ export default class MyAccount extends Component {
                           </div>
                         </Form>
                       </Card.Body>
-                       {/* </Accordion.Collapse> */}
+                      {/* </Accordion.Collapse> */}
                     </Card>
                   </div>
                 </div>

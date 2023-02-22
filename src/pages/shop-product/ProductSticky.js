@@ -1,4 +1,3 @@
-
 import React, { Fragment, Component } from "react";
 import MetaTags from "react-meta-tags";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
@@ -22,7 +21,7 @@ export class ProductSticky extends Component {
 
   componentDidMount() {
     let { id } = this.props.match.params;
-       Axios.get(`http://44.205.32.29:8000/admin/getoneproduct/${id}`)
+    Axios.get(`http://44.205.32.29:8000/admin/getoneproduct/${id}`)
       .then((response) => {
         this.setState({
           detail: response.data.data,
@@ -36,8 +35,7 @@ export class ProductSticky extends Component {
     return (
       <Fragment>
         <MetaTags>
-          <title>NEXUS PAY</title>
-          
+          <title>GSD100</title>
         </MetaTags>
 
         <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>
@@ -69,4 +67,3 @@ export class ProductSticky extends Component {
 }
 
 export default ProductSticky;
-

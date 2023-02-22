@@ -9,6 +9,8 @@ import kid from "../../assets/img/kid.jpg";
 import { Link } from "react-router-dom";
 import axiosConfig from "../../axiosConfig";
 import shirt from "../../assets/img/shirt-1.png";
+import cap from "../../assets/img/Front.jpg";
+
 
 class ByCategory extends React.Component {
   state = {
@@ -89,7 +91,7 @@ class ByCategory extends React.Component {
             </Col>
             <Col lg="4">
               <Link to="/shop-grid-women-column">
-                <img src={shirt} alt="img" height="300vh" width="100%" />
+                <img src={cap} alt="img" height="300vh" width="100%" />
               </Link>
             </Col>
             <Col lg="4">

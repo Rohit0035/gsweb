@@ -227,6 +227,7 @@
           line-height: 1;
 
           margin: 0;
+          color: #fff;
         }
       }
       .review-rating {
@@ -699,4 +700,41 @@
       margin-top: 15px;
     }
   }
+}
+
+body {
+  /* margin-top: 20px; */
+  background: #000;
+}
+
+.product-details-content.ml-70.mt-5.mb-5 {
+  h2 {
+    color: #fff !important;
+  }
+  h4 {
+    color: #fff !important;
+  }
+}
+.pro-details-list p {
+  color: #fff;
+}
+p.w-25.shadow-none.p-1.mb-0.bg-white.rounded {
+  color: #000;
+}
+
+.description-review-bottom .product-anotherinfo-wrapper ul li span {
+  font-weight: 500;
+  display: inline-block;
+  min-width: 85px;
+  margin: 0 26px 0 0;
+  color: #fff;
+}
+.description-review-bottom .product-anotherinfo-wrapper ul li {
+  font-size: 14px;
+  margin: 0 0 13px;
+  list-style: outside none none;
+  color: #fff;
+}
+.description-review-topbar .nav-item a.active {
+  color: #fff;
 }

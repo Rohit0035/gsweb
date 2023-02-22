@@ -127,3 +127,13 @@
     }
   }
 }
+
+body {
+  /* margin-top: 20px; */
+  background: #000;
+}
+.login-register-wrapper .login-form-container .login-register-form form input {
+    background-color: transparent;
+    border: 1px solid #ebebeb;
+    color: #ccc;
+}

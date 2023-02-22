@@ -10,12 +10,12 @@ import CategoryFiveGrid from "../../wrappers/category/CategoryFiveGrid";
 import HeroSliderTwentyNine from "../../wrappers/hero-slider/HeroSliderTwentyNine";
 import ByCategory from "../../wrappers/content-home/ByCategory";
 import ServiceAgricoin from "../../components/agricoinpage/ServiceAgricoin";
-import HomeCategory from "../../components/agricoinpage/HomeCategory";
+// import HomeCategory from "../../components/agricoinpage/HomeCategory";
 import BannerThirtyOne from "../../wrappers/banner/BannerThirtyOne";
 import BlogFeaturedFive from "../../wrappers/blog-featured/BlogFeaturedFive";
 import TestimonialOne from "../../wrappers/testimonial/TestimonialOne";
 
-// import SecondSection from "../../wrappers/content-home/SecondSection";
+//  import SecondSection from "../../wrappers/content-home/SecondSection";
 
 const HomeFurnitureFour = () => {
   return (
@@ -35,7 +35,7 @@ const HomeFurnitureFour = () => {
         {/* hero slider */}
         <HeroSliderTwentyNine />
 
-        <BannerThirtyOne spaceBottomClass="pb-70 pt-70" />
+        <BannerThirtyOne spaceBottomClass="pb-70 pt-70" /> 
         {/* category grid */}
         {/* <HomeCategory spaceBottomClass="pb-70" /> */}
 

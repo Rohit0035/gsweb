@@ -12,7 +12,7 @@ import { Toast, ToastBody, ToastHeader } from "reactstrap";
 import { ToastContainer } from "react-bootstrap";
 import { Button } from "reactstrap";
 import swal from "sweetalert";
-import axiosConfig from "../../axiosConfig"
+import axiosConfig from "../../axiosConfig";
 export default class LoginRegister extends Component {
   constructor(props) {
     super(props);
@@ -22,7 +22,7 @@ export default class LoginRegister extends Component {
       email: "",
       mobile: "",
       password: "",
-      cnfrmPassword:"",
+      cnfrmPassword: "",
 
       // otp: true,
       // walletId:"",
@@ -87,9 +87,9 @@ export default class LoginRegister extends Component {
         password: this.state.password,
       })
       .then((response) => {
-        console.log('@@@####',response.data);
+        console.log("@@@####", response.data);
         let userInfo = response.data.user;
-        
+
         //localStorage.setItem("authec", response.data.token);
         localStorage.setItem("auth-token", response.data.token);
         localStorage.setItem("userInfo", JSON.stringify(userInfo));
@@ -123,17 +123,15 @@ export default class LoginRegister extends Component {
       })
       .catch((error) => {
         console.log(error.response);
-          swal("Error!", "Something went wrong", "error");
+        swal("Error!", "Something went wrong", "error");
       });
-
-   
   };
   render() {
     // console.log(this.state.otp);
     return (
       <Fragment>
         <MetaTags>
-          <title>NEXUS PAY</title>
+          <title>GSD100</title>
           <meta
             name="description"
             content="Compare page of flone react minimalist eCommerce template."
@@ -145,155 +143,155 @@ export default class LoginRegister extends Component {
               <div className="row d-flex align-items-center justify-content-center">
                 <div className="col-lg-7 col-md-12 ml-auto mr-auto">
                   {/* {this.state.otp ? ( */}
-                    <div className="login-register-wrapper">
-                      <Tab.Container defaultActiveKey="login">
-                        <Nav
-                          variant="pills"
-                          className="login-register-tab-list"
-                        >
-                          <Nav.Item>
-                            <Nav.Link eventKey="login">
-                              <h4>Login</h4>
-                            </Nav.Link>
-                          </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="register">
-                              <h4>Register</h4>
-                            </Nav.Link>
-                          </Nav.Item>
-                        </Nav>
-                        <Tab.Content>
-                          <Tab.Pane eventKey="login">
-                            <div className="login-form-container">
-                              <div className="login-register-form">
-                                <form onSubmit={this.loginHandler}>
-                                  <input
-                                    type="text"
-                                    name="email"
-                                    required
-                                    placeholder="Email / Mobile"
-                                    value={this.state.email}
-                                    onChange={this.handlechange}
-                                  />
-                                 
-                                  <input
-                                    type="password"
-                                    maxLength={8}
-                                    name="password"
-                                    placeholder="Password"
-                                    value={this.state.password}
-                                    onChange={this.handlechange}
-                                  />
-                              
-                                  <div className="button-box">
-                                    <div className="login-toggle-btn"></div>
-                                    <button type="submit">
-                                      <span>Login</span>
-                                    </button>
-                                    <Link to="/PinForgotpass" className="login-toggle-btn fgtbtn">
-                                         Forget Password   
-                                     </Link>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </Tab.Pane>
+                  <div className="login-register-wrapper">
+                    <Tab.Container defaultActiveKey="login">
+                      <Nav variant="pills" className="login-register-tab-list">
+                        <Nav.Item>
+                          <Nav.Link eventKey="login">
+                            <h4>Login</h4>
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="register">
+                            <h4>Register</h4>
+                          </Nav.Link>
+                        </Nav.Item>
+                      </Nav>
+                      <Tab.Content>
+                        <Tab.Pane eventKey="login">
+                          <div className="login-form-container">
+                            <div className="login-register-form">
+                              <form onSubmit={this.loginHandler}>
+                                <input
+                                  type="text"
+                                  name="email"
+                                  required
+                                  placeholder="Email / Mobile"
+                                  value={this.state.email}
+                                  onChange={this.handlechange}
+                                />
 
-                          {/* Register the user now */}
+                                <input
+                                  type="password"
+                                  maxLength={8}
+                                  name="password"
+                                  placeholder="Password"
+                                  value={this.state.password}
+                                  onChange={this.handlechange}
+                                />
 
-                          <Tab.Pane eventKey="register">
-                            <div className="login-form-container">
-                              <div className="login-register-form">
-                                <form
-                                  className="text-center"
-                                  onSubmit={this.submitHandler}
-                                  method="post"
-                                >
-                                  <input
-                                    type="text"
-                                    name="firstname"
-                                    required
-                                    placeholder="Enter Your Firstname"
-                                    value={this.state.firstname}
-                                    onChange={this.changeHandler}
-                                  />
-                                  <input
-                                    type="text"
-                                    name="lastname"
-                                    placeholder="Enter Your Lastname"
-                                    value={this.state.lastname}
-                                    onChange={this.changeHandler}
-                                  />
-                                  <input
-                                    type="email"
-                                    name="email"
-                                    required
-                                    placeholder="Enter Your Email"
-                                    value={this.state.email}
-                                    onChange={this.changeHandler}
-                                  />
-                                  <input
-                                    type="number"
-                                    name="mobile"
-                                    maxLength="12"
-                                    required
-                                    placeholder="Enter Your Mobile No."
-                                    value={this.state.mobile}
-                                    onChange={this.changeHandler}
-                                  />
-                                  <input
-                                    type="password"
-                                    minLength={6}
-                                    maxLength={8}
-                                    name="password"
-                                    required
-                                    placeholder="Password"
-                                    value={this.state.password}
-                                    onChange={this.changeHandler}
-                                  />
-                                   <input
-                                    type="password"
-                                    name="cnfrmPassword"
-                                    maxLength="8"
-                                    required
-                                    placeholder="Confrim Password"
-                                    value={this.state.cnfrmPassword}
-                                    onChange={this.changeHandler}
-                                  />
-                                  <div className="button-box">
-                                    <button type="submit">
-                                      <span>Register</span>
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
+                                <div className="button-box">
+                                  <div className="login-toggle-btn"></div>
+                                  <button type="submit">
+                                    <span>Login</span>
+                                  </button>
+                                  <Link
+                                    to="/PinForgotpass"
+                                    className="login-toggle-btn fgtbtn"
+                                  >
+                                    Forget Password
+                                  </Link>
+                                </div>
+                              </form>
                             </div>
-                          </Tab.Pane>
-                        </Tab.Content>
-                      </Tab.Container>
-                    </div>
+                          </div>
+                        </Tab.Pane>
+
+                        {/* Register the user now */}
+
+                        <Tab.Pane eventKey="register">
+                          <div className="login-form-container">
+                            <div className="login-register-form">
+                              <form
+                                className="text-center"
+                                onSubmit={this.submitHandler}
+                                method="post"
+                              >
+                                <input
+                                  type="text"
+                                  name="firstname"
+                                  required
+                                  placeholder="Enter Your Firstname"
+                                  value={this.state.firstname}
+                                  onChange={this.changeHandler}
+                                />
+                                <input
+                                  type="text"
+                                  name="lastname"
+                                  placeholder="Enter Your Lastname"
+                                  value={this.state.lastname}
+                                  onChange={this.changeHandler}
+                                />
+                                <input
+                                  type="email"
+                                  name="email"
+                                  required
+                                  placeholder="Enter Your Email"
+                                  value={this.state.email}
+                                  onChange={this.changeHandler}
+                                />
+                                <input
+                                  type="number"
+                                  name="mobile"
+                                  maxLength="12"
+                                  required
+                                  placeholder="Enter Your Mobile No."
+                                  value={this.state.mobile}
+                                  onChange={this.changeHandler}
+                                />
+                                <input
+                                  type="password"
+                                  minLength={6}
+                                  maxLength={8}
+                                  name="password"
+                                  required
+                                  placeholder="Password"
+                                  value={this.state.password}
+                                  onChange={this.changeHandler}
+                                />
+                                <input
+                                  type="password"
+                                  name="cnfrmPassword"
+                                  maxLength="8"
+                                  required
+                                  placeholder="Confrim Password"
+                                  value={this.state.cnfrmPassword}
+                                  onChange={this.changeHandler}
+                                />
+                                <div className="button-box">
+                                  <button type="submit">
+                                    <span>Register</span>
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </Tab.Container>
+                  </div>
                   {/* ) : ( */}
-                    <>
-                      <div className="login-form-container">
-                        <div className="login-register-form">
-                          {/* <form onSubmit={this.otpHandler}> */}
-                            {/* <input
+                  <>
+                    <div className="login-form-container">
+                      <div className="login-register-form">
+                        {/* <form onSubmit={this.otpHandler}> */}
+                        {/* <input
                               type="number"
                               name="otpnumber"
                               placeholder="OTP No"
                               value={this.state.otpnumber}
                               onChange={this.handlechange}
                             /> */}
-                            <div className="button-box">
-                              <div className="login-toggle-btn"></div>
-                              {/* <Button type="submit">
+                        <div className="button-box">
+                          <div className="login-toggle-btn"></div>
+                          {/* <Button type="submit">
                                 <span>Verify</span>
                               </Button> */}
-                            </div>
-                          {/* </form> */}
                         </div>
+                        {/* </form> */}
                       </div>
-                    </>
+                    </div>
+                  </>
                   {/* )} */}
                 </div>
               </div>

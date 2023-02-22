@@ -4,7 +4,7 @@ import {} from "reactstrap";
 export class FirstSectiontwo extends Component {
   render() {
     return (
-      <div >
+      <div>
         <h2
           className="fw-bolder"
           style={{
@@ -13,7 +13,7 @@ export class FirstSectiontwo extends Component {
             marginTop: 15,
           }}
         >
-          How NEXUS PAY Works?
+          How GSD100 Works?
         </h2>
         <h6 style={{ textAlign: "center" }}>
           quis qui ex in qui non reprehenderit

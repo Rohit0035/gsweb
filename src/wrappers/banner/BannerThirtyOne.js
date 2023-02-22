@@ -9,28 +9,28 @@ const BannerThirtyOne = ({ spaceBottomClass }) => {
         <div className="row">
           <div className="col-lg-4 pb-30">
             <div className="single-banner-3">
-              <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+              <Link to={process.env.PUBLIC_URL + "/"}>
                 <img
                   src={
-                    process.env.PUBLIC_URL + "/assets/img/banner/banner-46.jpg"
+                    process.env.PUBLIC_URL + "/assets/img/banner/banner-46.png"
                   }
                   alt=""
                   className="img-fluid"
                 />
               </Link>
-              <div className="banner-content-3 banner-content-3--white-content banner-content-3--right">
+              {/* <div className="banner-content-3 banner-content-3--white-content banner-content-3--right">
                 <h4>
                   Up To 40% Off <br /> All New Products
                 </h4>
                 <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
                   Shop Now
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-4 pb-30">
             <div className="single-banner-3">
-              <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+              <Link to={process.env.PUBLIC_URL + "/"}>
                 <img
                   src={
                     process.env.PUBLIC_URL + "/assets/img/banner/banner-47.jpg"
@@ -39,35 +39,35 @@ const BannerThirtyOne = ({ spaceBottomClass }) => {
                   className="img-fluid"
                 />
               </Link>
-              <div className="banner-content-3 banner-content-3--white-content">
+              {/* <div className="banner-content-3 banner-content-3--white-content">
                 <h4>
                   Free Shipping & The Best Items Granted
                 </h4>
                 <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
                   Shop Now
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-4 pb-30">
             <div className="single-banner-3">
-              <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+              <Link to={process.env.PUBLIC_URL + "/"}>
                 <img
                   src={
-                    process.env.PUBLIC_URL + "/assets/img/banner/banner-47.jpg"
+                    process.env.PUBLIC_URL + "/assets/img/banner/banner-48.png"
                   }
                   alt=""
                   className="img-fluid"
                 />
               </Link>
-              <div className="banner-content-3 banner-content-3--white-content">
+              {/* <div className="banner-content-3 banner-content-3--white-content">
                 <h4>
                   Free Shipping & The Best Items Granted
                 </h4>
                 <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
                   Shop Now
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const BannerThirtyOne = ({ spaceBottomClass }) => {
 };
 
 BannerThirtyOne.propTypes = {
-  spaceBottomClass: PropTypes.string
+  spaceBottomClass: PropTypes.string,
 };
 
 export default BannerThirtyOne;

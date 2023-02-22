@@ -9,26 +9,26 @@ export default class privacyPolicy extends Component {
       <LayoutOne>
         <Container fluid>
           <Row className="mb-5">
-          <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            backgroundImage: `url(${Cloth})`,
-            width: "100%",
-            padding:"100px 0px",
-            backgroundSize:"cover"
-          }}
-        >
-          <div className="">
-            <h1 className="text-light text-center">privacy Policy</h1>
-          </div>
-        </div>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                backgroundImage: `url(${Cloth})`,
+                width: "100%",
+                padding: "100px 0px",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="">
+                <h1 className="text-light text-center">privacy Policy</h1>
+              </div>
+            </div>
           </Row>
           <Container>
             <Row>
               <ListGroup>
                 <h2 style={{ fontWeight: "500" }}>Privacy Policy</h2>
                 <p>
-                NEXUS PAY, C/O, Brizebond Technologies Private Limited (NEXUS PAY)
+                  GSD100, C/O, Brizebond Technologies Private Limited (GSD100)
                   takes your privacy very seriously. This Privacy Policy
                   (“Privacy Policy”) explains the details of our collection, use
                   and disclosure of information, including your personal
@@ -47,13 +47,13 @@ export default class privacyPolicy extends Component {
                   communications, or services.
                 </li>
                 <li>
-                  By accessing, or using the NEXUS PAY website (“Website”), and/or
+                  By accessing, or using the GSD100 website (“Website”), and/or
                   its applications (“App/Application”) you expressly agree and
                   consent to be bound by the terms of this Privacy Policy.
                 </li>
                 <li>
-                  The terms "WE", "OUR" and "US" refer to NEXUS PAY and the terms "
-                  YOU", "YOUR" and "USER" refer to you, as a user of NEXUS PAY.
+                  The terms "WE", "OUR" and "US" refer to GSD100 and the terms "
+                  YOU", "YOUR" and "USER" refer to you, as a user of GSD100.
                 </li>
                 <li>
                   Personal Information refers to any information about a living
@@ -86,11 +86,11 @@ export default class privacyPolicy extends Component {
                   e-mails sent to you by us. We use your mobile numbers to send
                   you transaction alerts and SMS alerts based on your
                   preferences. If you do not wish to receive such SMSs from us,
-                  please notify us at support@NEXUSPAY.com to stop receiving SMSs
-                  from us. Please note that it may take about 14 days to process
-                  your request. Please keep in mind that we will continue to
-                  notify you by email /SMS/via phone calls regarding your
-                  services with us, even after you have opted out.
+                  please notify us at support@NEXUSPAY.com to stop receiving
+                  SMSs from us. Please note that it may take about 14 days to
+                  process your request. Please keep in mind that we will
+                  continue to notify you by email /SMS/via phone calls regarding
+                  your services with us, even after you have opted out.
                 </li>
               </ListGroup>
             </Row>
@@ -100,7 +100,7 @@ export default class privacyPolicy extends Component {
                   Scope of Policy and Terms{" "}
                 </h2>
                 <p>
-                  1. This Privacy Policy applies to the NEXUS PAY Website, or any
+                  1. This Privacy Policy applies to the GSD100 Website, or any
                   online/web application that refers to or links to this Privacy
                   Policy. This Privacy Policy applies regardless of whether you
                   have downloaded or accessed the Website or Application onto
@@ -113,12 +113,12 @@ export default class privacyPolicy extends Component {
                   group of individuals.{" "}
                 </p>
                 <p>
-                  3. This Privacy Policy governs the use of any and all NEXUS PAY
+                  3. This Privacy Policy governs the use of any and all GSD100
                   Services availed by you.{" "}
                 </p>
                 <h2 style={{ fontWeight: "500" }}>Information We Collect</h2>
                 <p>
-                  4. NEXUS PAY collects, processes and retains information, i.e.
+                  4. GSD100 collects, processes and retains information, i.e.
                   Personal Information (including Sensitive Personal
                   Information) about you when you visit “www.NEXUSPAY.com”. In
                   course of your use and transactions on the Website and
@@ -134,7 +134,7 @@ export default class privacyPolicy extends Component {
                   your date of birth.
                 </p>
                 <p>
-                  3. Your correspondence with NEXUS PAY, including but not limited
+                  3. Your correspondence with GSD100, including but not limited
                   to customer support.
                 </p>
                 <p>
@@ -181,7 +181,7 @@ export default class privacyPolicy extends Component {
                 </p>
                 <p>b) Information we collect about you</p>
                 <p>
-                  NEXUS PAY collects your Device information, including but not
+                  GSD100 collects your Device information, including but not
                   limited to, IP address, browsing data, Device ID or Unique
                   identifier, device type, geo-location, computer and internet
                   information, mobile network information, statistics on page
@@ -203,7 +203,7 @@ export default class privacyPolicy extends Component {
                   Why We Collect Information{" "}
                 </h3>
                 <p>
-                  5. NEXUS PAY collects information (including Sensitive Personal
+                  5. GSD100 collects information (including Sensitive Personal
                   Information) to provide the services and for the purposes as
                   outlined below:-
                 </p>
@@ -212,7 +212,7 @@ export default class privacyPolicy extends Component {
                   Website/App.
                 </p>
                 <p>
-                  2. To provide you with access to NEXUS PAY Services and Customer
+                  2. To provide you with access to GSD100 Services and Customer
                   Support.
                 </p>
                 <p>3. To process and notify you of your transactions.</p>
@@ -242,21 +242,21 @@ export default class privacyPolicy extends Component {
                   Disclosure of your Information{" "}
                 </h3>
                 <p>
-                  6. NEXUS PAY does not share, sell, rent or trade personal
+                  6. GSD100 does not share, sell, rent or trade personal
                   information collected through “www.NEXUSPAY.com” with third
                   parties for their sole promotional purposes or otherwise than
                   as outlined in this Privacy Policy.
                 </p>
                 <p>
-                  7. NEXUS PAY may share the Personal Information (and other
+                  7. GSD100 may share the Personal Information (and other
                   information including Sensitive Personal Information) with
                   selected third parties as described below:-
                 </p>
                 <p>
-                  1. Members of the NEXUS PAY corporate family, affiliates, group
+                  1. Members of the GSD100 corporate family, affiliates, group
                   companies.
                 </p>
-                <p>2. Service providers under contract with NEXUS PAY.</p>
+                <p>2. Service providers under contract with GSD100.</p>
                 <p>
                   8. We may also disclose your Personal Information (and other
                   information including Sensitive Personal Information):-
@@ -267,12 +267,12 @@ export default class privacyPolicy extends Component {
                   authority, or by other legal process.
                 </p>
                 <p>
-                  2. When NEXUS PAY believes in good faith that disclosure is
+                  2. When GSD100 believes in good faith that disclosure is
                   necessary to protect our legal rights, protect your safety or
                   the safety of others, or investigate fraud or crime.
                 </p>
                 <p>
-                  3. If NEXUS PAY (or any of our affiliates) is involved in a
+                  3. If GSD100 (or any of our affiliates) is involved in a
                   merger, acquisition, or sale of all or substantially all its
                   assets or equity.{" "}
                 </p>
@@ -291,7 +291,7 @@ export default class privacyPolicy extends Component {
                 <p>
                   10. At times, express written consent from the individual may
                   be required based on the information processing activity.
-                  NEXUS PAY receives consent from individuals prior to:
+                  GSD100 receives consent from individuals prior to:
                 </p>
                 <p>
                   1. collecting, using, or processing their personal
@@ -327,19 +327,19 @@ export default class privacyPolicy extends Component {
                 </p>
                 <h3 style={{ fontWeight: "500" }}>Marketing and Analytics </h3>
                 <p>
-                  14. NEXUS PAY  will send you messages and e-mails or contact you
+                  14. GSD100 will send you messages and e-mails or contact you
                   through voice call or robotic calling to carry to your
                   promotional offers.{" "}
                 </p>
                 <p>
-                  15. NEXUS PAY and our third-party service providers, including
+                  15. GSD100 and our third-party service providers, including
                   our marketing partners and analytics providers, may use mobile
                   tracking technologies and/or website cookies to distinguish
                   and/or identify you from other users of the Website or
                   Application.
                 </p>
                 <p>
-                  16. This helps NEXUS PAY to improve the Website and Application
+                  16. This helps GSD100 to improve the Website and Application
                   thereby providing you with a good experience. We may use the
                   analytics tools and software in order to develop and analyse
                   use of the Service.
@@ -373,9 +373,9 @@ export default class privacyPolicy extends Component {
                 </p>
                 <h3 style={{ fontWeight: "500" }}>Data Storage </h3>
                 <p>
-                  19. NEXUS PAY  may transfer your information from “www.
-                  NEXUS PAY.com” to other databases and store it on NEXUS PAY or other
-                  supplier systems. NEXUS PAY ensures appropriate security controls
+                  19. GSD100 may transfer your information from “www.
+                  GSD100.com” to other databases and store it on GSD100 or other
+                  supplier systems. GSD100 ensures appropriate security controls
                   while storing data on its or its suppliers’ systems.
                 </p>
                 <h3 style={{ fontWeight: "500" }}>Retention Policy</h3>
@@ -442,34 +442,34 @@ export default class privacyPolicy extends Component {
                 </p>
                 <h3 style={{ fontWeight: "500" }}>Changes</h3>
                 <p>
-                  28.NEXUS PAY reserves the right to change this policy from time
+                  28.GSD100 reserves the right to change this policy from time
                   to time. Any changes shall be effective immediately upon the
                   posting of the revised Privacy Policy. We encourage you to
                   periodically review this page for latest information on our
                   privacy practices.
                 </p>
                 <p>
-                  29.NEXUS PAY trusts you to be conscious of the Policy and any
+                  29.GSD100 trusts you to be conscious of the Policy and any
                   changes to it at all time, thus maintaining that it cannot be
                   made liable if you misunderstand or ignore the Privacy Policy.
                 </p>
                 <h3 style={{ fontWeight: "500" }}>Grievance Redressal</h3>
                 <p>
                   30.Any queries pertaining to this Privacy Policy may be
-                  directed to NEXUS PAY:
+                  directed to GSD100:
                 </p>
                 <table class="table">
                   <thead></thead>
                   <tbody>
                     <tr>
                       <th scope="row">Name:-</th>
-                      <td>NEXUS PAY</td>
+                      <td>GSD100</td>
                     </tr>
                     <tr>
                       <th scope="row">Address:-</th>
                       <td>
-                       Corporate Office
-                       10, Glasford Street, Tooting Broadway, London-SW179HN,United Kingdom.
+                        Corporate Office 10, Glasford Street, Tooting Broadway,
+                        London-SW179HN,United Kingdom.
                       </td>
                     </tr>
                     <tr>

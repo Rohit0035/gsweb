@@ -153,20 +153,22 @@ const MobileNavMenu = ({ strings }) => {
         <li>
           <Link to={process.env.PUBLIC_URL + "/"}>{strings["home"]}</Link>
         </li>
-          <li>
-              <Link to={process.env.PUBLIC_URL + "/soxiservice"}>{strings["soxiservice"]}
-                Services
-              </Link>
-          </li>  
         <li>
-         <Link to={process.env.PUBLIC_URL + "/shop-grid-two-column"}>
+          <Link to={process.env.PUBLIC_URL + "/shop-grid-two-column"}>
             {strings["shop-grid-two-column"]}
-               Products
+            Shop
           </Link>
-        </li> 
+        </li>
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/Coaching"}>
+            {strings["Coaching"]}
+            Coaching
+          </Link>
+        </li>
         <li>
           <Link to={process.env.PUBLIC_URL + "/about"}>
-            {strings["about_us"]}
+            {strings["Affiliate"]}
+            Affiliate
           </Link>
         </li>
 
@@ -508,6 +510,12 @@ const MobileNavMenu = ({ strings }) => {
         <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}>
             {strings["contact_us"]}
+          </Link>
+        </li>
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/cap"}>
+            {strings["cap"]}
+            Caps
           </Link>
         </li>
         {/* < li>

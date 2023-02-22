@@ -8,18 +8,14 @@ import LocationMap from "../../components/contact/LocationMap";
 import { Row } from "reactstrap";
 import Cloth from "../../assets/img/Cloth.jpg";
 
-
 const Contact = ({ location }) => {
   const { pathname } = location;
 
   return (
     <Fragment>
       <MetaTags>
-        <title>NEXUS PAY</title>
-        <meta
-          name="description"
-          content=""
-        />
+        <title>GSD100</title>
+        <meta name="description" content="" />
       </MetaTags>
       {/* <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
       <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
@@ -29,20 +25,20 @@ const Contact = ({ location }) => {
         {/* breadcrumb */}
         {/* <Breadcrumb /> */}
         <Row className="mb-5">
-        <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            backgroundImage: `url(${Cloth})`,
-            width: "100%",
-            padding:"100px 0px",
-            backgroundSize:"cover"
-          }}
-        >
-          <div className="">
-            <h1 className="text-light text-center">Contact Us</h1>
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{
+              backgroundImage: `url(${Cloth})`,
+              width: "100%",
+              padding: "100px 0px",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="">
+              <h1 className="text-light text-center">Contact Us</h1>
+            </div>
           </div>
-        </div>
-      </Row>
+        </Row>
         <div className="contact-area pt-100 pb-100">
           <div className="container">
             <div className="contact-map mb-10">
@@ -67,7 +63,7 @@ const Contact = ({ location }) => {
                     <div className="contact-info-dec">
                       <p>
                         <a href="mailto:support@gynysys.com">
-                        support@gynysys.com
+                          support@gynysys.com
                         </a>
                       </p>
                       {/* <p>
@@ -85,7 +81,9 @@ const Contact = ({ location }) => {
                       <p>Address goes here, </p>
                       <h6>Corporate Office</h6>
                       <p>
-                          10, Glasford Street, Tooting Broadway, London-SW179HN,United Kingdom.</p>
+                        10, Glasford Street, Tooting Broadway,
+                        London-SW179HN,United Kingdom.
+                      </p>
                     </div>
                   </div>
                   <div className="contact-social text-center">

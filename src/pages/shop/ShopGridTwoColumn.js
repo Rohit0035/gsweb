@@ -99,9 +99,7 @@ const ShopGridTwoColumn = ({
     setAllbrand(data.data);
   };
   const getallcategory = async () => {
-    const { data } = await axiosConfig.get(
-      `/admin/getproductCategory`
-    );
+    const { data } = await axiosConfig.get(`/admin/getproductCategory`);
     //const address = data.data;
     console.log(data.data);
     setAllcategory(data.data);
@@ -109,9 +107,7 @@ const ShopGridTwoColumn = ({
     // setUseraddress(address)
   };
   const getalltags = async () => {
-    const { data } = await axiosConfig.get(
-      `/admin/getuniquetag`
-    );
+    const { data } = await axiosConfig.get(`/admin/getuniquetag`);
     //const address = data.data;
     console.log(data.data);
     setAlltags(data.data);
@@ -128,57 +124,48 @@ const ShopGridTwoColumn = ({
 
   const getproductbycolor = async (id) => {
     console.log(id);
-    const { data } = await axiosConfig.get(
-      `/admin/productbycolor/${id}`
-    );
+    const { data } = await axiosConfig.get(`/admin/productbycolor/${id}`);
     console.log(data.data);
     setDress(data.data);
   };
   const getproductbysize = async (id) => {
     console.log(id);
-    const { data } = await axiosConfig.get(
-      `/admin/productbysize/${id}`
-    );
+    const { data } = await axiosConfig.get(`/admin/productbysize/${id}`);
     console.log(data.data);
     setDress(data.data);
   };
   const getproductbybrand = async (id) => {
     console.log(id);
-    const { data } = await axiosConfig.get(
-      `/admin/productbybrand/${id}`
-    );
+    const { data } = await axiosConfig.get(`/admin/productbybrand/${id}`);
     console.log(data.data);
     setDress(data.data);
   };
-  const getproductbypricerange = async (min,max) => {
-    console.log(min,max);
-    
-    const { data } = await axiosConfig.post(
-      `/admin/productbypricerange`,{
-        minamt:min,
-        maxamt:max
-      }
-    );
+  const getproductbypricerange = async (min, max) => {
+    console.log(min, max);
+
+    const { data } = await axiosConfig.post(`/admin/productbypricerange`, {
+      minamt: min,
+      maxamt: max,
+    });
     console.log(data.data);
     setDress(data.data);
   };
 
-  const callbackfucntin = childData => {
+  const callbackfucntin = (childData) => {
     // callback(childData)
-    console.log(childData);;
+    console.log(childData);
   };
-  const tagcallbackfunction = tagname => {
+  const tagcallbackfunction = (tagname) => {
     // callback(childData)
     console.log(tagname);
-    getproductbytagname(tagname)
+    getproductbytagname(tagname);
   };
-  const getproductrangeval = value => {
+  const getproductrangeval = (value) => {
     // callback(childData)
     console.log(value);
-    
-    getproductbypricerange(value.min,value.max)//getproductbyvalue(tagname)
+
+    getproductbypricerange(value.min, value.max); //getproductbyvalue(tagname)
   };
-  
 
   useEffect(() => {
     async function getData() {
@@ -202,7 +189,7 @@ const ShopGridTwoColumn = ({
   return (
     <Fragment>
       <MetaTags>
-        <title>NEXUS PAY</title>
+        <title>GSD100</title>
         <meta
           name="description"
           content="Shop page of flone react minimalist eCommerce template."

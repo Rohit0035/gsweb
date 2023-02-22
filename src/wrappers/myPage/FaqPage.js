@@ -18,19 +18,19 @@ export class FaqPage extends Component {
       <LayoutOne>
         <Container fluid>
           <Row className="mb-5">
-          <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            backgroundImage: `url(${Cloth})`,
-            width: "100%",
-            padding:"100px 0px",
-            backgroundSize:"cover"
-          }}
-        >
-          <div className="">
-            <h1 className="text-light text-center">FAQ</h1>
-          </div>
-        </div>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                backgroundImage: `url(${Cloth})`,
+                width: "100%",
+                padding: "100px 0px",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="">
+                <h1 className="text-light text-center">FAQ</h1>
+              </div>
+            </div>
           </Row>
           <Row className="justify-content-md-center">
             <Col xs lg="2"></Col>
@@ -38,10 +38,10 @@ export class FaqPage extends Component {
               <Accordion>
                 <Accordion.Item eventKey="0" className="m-4">
                   <Accordion.Header>
-                    What to expect from NEXUS PAY?
+                    What to expect from GSD100?
                   </Accordion.Header>
                   <Accordion.Body>
-                     NEXUS PAY is an online discovery platform plus an e-commerce
+                    GSD100 is an online discovery platform plus an e-commerce
                     platform. Here you can search for clothes, or you can search
                     for specific shops. Go to shop profiles and check out which
                     products are listed for online shopping. You can check out
@@ -88,13 +88,13 @@ export class FaqPage extends Component {
                     financial information or advance payments in exchange for
                     rewards. Please DO NOT respond to any call/sms/email
                     claiming to offer rewards/lucky draw prizes on behalf of
-                    NEXUS PAY. 
+                    GSD100. 
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1" className="m-4">
                   <Accordion.Header>
                     What are the payment options available for my orders at
-                    NEXUS PAY?
+                    GSD100?
                   </Accordion.Header>
                   <Accordion.Body>
                     Cash-on-Delivery (COD), UPI, Net Banking. All these options
@@ -113,7 +113,7 @@ export class FaqPage extends Component {
                 <Accordion.Item eventKey="4" className="m-4">
                   <Accordion.Header>What is the COD limit?</Accordion.Header>
                   <Accordion.Body>
-                    NEXUS PAY reserves the right to determine the COD limit for
+                    GSD100 reserves the right to determine the COD limit for
                     every customer and/or orders. The COD limit includes any
                     undelivered, unpaid orders and any new orders being placed. 
                   </Accordion.Body>

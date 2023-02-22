@@ -211,12 +211,10 @@
   }
 }
 
-
-
 .support-wrap-4-border {
   padding: 50px 0 20px;
 
-  border: 1px solid #eeeeee;
+  border: 1px solid #000eee;
   @media #{$md-layout} {
     padding: 50px 10px 20px;
   }
@@ -371,7 +369,6 @@
     }
   }
 }
-
 
 .support-wrap-7 {
   display: flex;

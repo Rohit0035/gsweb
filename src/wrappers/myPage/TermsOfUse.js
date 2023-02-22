@@ -9,19 +9,19 @@ export default class TermsOfUse extends Component {
       <LayoutOne>
         <Container fluid className="mb-4">
           <Row className="mb-5">
-          <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            backgroundImage: `url(${Cloth})`,
-            width: "100%",
-            padding:"100px 0px",
-            backgroundSize:"cover"
-          }}
-        >
-          <div className="">
-            <h1 className="text-light text-center">Terms and Conditions</h1>
-          </div>
-        </div>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                backgroundImage: `url(${Cloth})`,
+                width: "100%",
+                padding: "100px 0px",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="">
+                <h1 className="text-light text-center">Terms and Conditions</h1>
+              </div>
+            </div>
           </Row>
           <Container>
             <Row>
@@ -35,11 +35,12 @@ export default class TermsOfUse extends Component {
                   and does not require any physical or digital signature.
                 </h3>
                 <p>
-                  The site www.NEXUSPAY.com (hereinafter referred to as "Website")
-                  is owned by Brizebond Technologies Private Limited, a company
-                  incorporated under the Companies Act, 1956 with its registered
-                  office at 1/18, East Mall Road, Dum Dum, Kolkata-700080
-                  (hereinafter referred to as "Company/NEXUSPAY").
+                  The site www.NEXUSPAY.com (hereinafter referred to as
+                  "Website") is owned by Brizebond Technologies Private Limited,
+                  a company incorporated under the Companies Act, 1956 with its
+                  registered office at 1/18, East Mall Road, Dum Dum,
+                  Kolkata-700080 (hereinafter referred to as
+                  "Company/NEXUSPAY").
                 </p>
                 <p>
                   We are the operators of the Website, associated web
@@ -78,8 +79,8 @@ export default class TermsOfUse extends Component {
                 <h3 style={{ fontWeight: "500" }}>
                   License and Website Access
                 </h3>
-                ●General:NEXUSPAY grants you a limited license to access and make
-                personal use of this Website and not to modify it, or any
+                ●General:NEXUSPAY grants you a limited license to access and
+                make personal use of this Website and not to modify it, or any
                 portion of it, except with express written consent of NEXUSPAY.
                 <br />
                 ● No license for commercial sale: This license does not include
@@ -103,10 +104,10 @@ export default class TermsOfUse extends Component {
                 register as a User of the Website and shall not transact on or
                 use the Website. As a minor if you wish to use or transact on
                 the Website, such use or transaction may be made by your legal
-                guardian or parents on the Website. NEXUSPAY reserves the right to
-                terminate your membership and / or refuse to provide you with
-                access to the Website if it is brought to NEXUSPAY 's notice or if
-                it is discovered that you are under the age of 18 years.
+                guardian or parents on the Website. NEXUSPAY reserves the right
+                to terminate your membership and / or refuse to provide you with
+                access to the Website if it is brought to NEXUSPAY 's notice or
+                if it is discovered that you are under the age of 18 years.
               </ListGroup>
             </Row>
             <Row>
@@ -197,17 +198,17 @@ export default class TermsOfUse extends Component {
                   to provide You with access to the Website.
                 </p>
                 <p>
-                NEXUSPAY will not be responsible for any financial loss,
+                  NEXUSPAY will not be responsible for any financial loss,
                   inconvenience or mental agony resulting from misuse of User's
                   ID/password/credit card number/account details number for
                   using NEXUSPAY services.
                 </p>
                 <p>
                   The User also agrees and undertakes to immediately notify
-                  NEXUSPAY of any unauthorized use of the User's password or User
-                  ID and to ensure that the User logs off at the end of each
-                  session at the website. NEXUSPAY shall not be responsible for
-                  any, direct or indirect, loss or damage arising out of the
+                  NEXUSPAY of any unauthorized use of the User's password or
+                  User ID and to ensure that the User logs off at the end of
+                  each session at the website. NEXUSPAY shall not be responsible
+                  for any, direct or indirect, loss or damage arising out of the
                   User's failure to comply with this requirement.
                 </p>
                 <p>
@@ -269,8 +270,8 @@ export default class TermsOfUse extends Component {
                     3.NEXUSPAY is only a facilitator, an intermediary and is not
                     and cannot be a party to or control in any manner any
                     transactions between the Vendor/Seller and the Customer.
-                    NEXUSPAY shall neither be responsible nor liable to mediate or
-                    resolve any disputes or disagreements between the Users.
+                    NEXUSPAY shall neither be responsible nor liable to mediate
+                    or resolve any disputes or disagreements between the Users.
                   </p>
                   <p>
                     4.You acknowledge and undertake that you are accessing the
@@ -297,12 +298,12 @@ export default class TermsOfUse extends Component {
                     disagreement between Customers and Sellers.
                   </p>
                   <p>
-                    7.NEXUSPAY does not make any representation or warranty as to
-                    the item-specifics (such as legal title, creditworthiness,
-                    identity, etc.) of any of its Users. You are advised to
-                    independently verify the bona fides of any particular User
-                    that You choose to deal with on the Website and use Your
-                    best judgment in that behalf.
+                    7.NEXUSPAY does not make any representation or warranty as
+                    to the item-specifics (such as legal title,
+                    creditworthiness, identity, etc.) of any of its Users. You
+                    are advised to independently verify the bona fides of any
+                    particular User that You choose to deal with on the Website
+                    and use Your best judgment in that behalf.
                   </p>
                   <p>
                     8.NEXUSPAY does not at any point of time during any
@@ -390,10 +391,10 @@ export default class TermsOfUse extends Component {
                     statement(s) or comment(s) about Us or the brand name or
                     domain name used by Us, or otherwise engage in any conduct
                     or action that might tarnish the image or reputation, of
-                    NEXUSPAY or sellers on platform or otherwise tarnish or dilute
-                    any NEXUSPAY's trade or service marks, trade name and/or
-                    goodwill associated with such trade or service marks, as may
-                    be owned or used by Us.
+                    NEXUSPAY or sellers on platform or otherwise tarnish or
+                    dilute any NEXUSPAY's trade or service marks, trade name
+                    and/or goodwill associated with such trade or service marks,
+                    as may be owned or used by Us.
                   </p>
                   <p>
                     3.You agree not to use any device, software or routine to
@@ -424,7 +425,7 @@ export default class TermsOfUse extends Component {
                     right to remove or edit any Content that in its sole
                     discretion violates, or is alleged to violate, any
                     applicable law or either the spirit or letter of these Terms
-                    of Use. In no event shallNEXUS PAY oinNAA assume or have any
+                    of Use. In no event shallGSD100 oinNAA assume or have any
                     responsibility or liability for any Content posted or for
                     any claims, damages or losses resulting from use of Content
                     and/or appearance of Content on the Website. You hereby
@@ -434,7 +435,6 @@ export default class TermsOfUse extends Component {
                     proprietary or other rights of third parties or contain any
                     libellous, tortious, or otherwise unlawful information.
                   </p>
-                  
                 </ListGroup>
               </Row>
             </Row>
