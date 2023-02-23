@@ -136,6 +136,14 @@ const NotFound = lazy(() => import("./pages/other/NotFound"));
 // GSD pages
 const Coaching = lazy(() => import("./components/gsdpages/Coaching"));
 const Cap = lazy(() => import("./components/gsdpages/Cap"));
+const BusinessCoaching = lazy(() => import("./components/gsdpages/BusinessCoaching"));
+const HealthCoaching = lazy(() =>
+  import("./components/gsdpages/HealthCoaching")
+);
+const LifeCoaching = lazy(() =>
+  import("./components/gsdpages/LifeCoaching")
+);
+
 
 // agricoinpages
 
@@ -257,6 +265,21 @@ const App = (props) => {
                   <Route
                     path={process.env.PUBLIC_URL + "/cap"}
                     component={Cap}
+                  />
+
+                  <Route
+                    path={process.env.PUBLIC_URL + "/healthcoaching"}
+                    component={HealthCoaching}
+                  />
+
+                  <Route
+                    path={process.env.PUBLIC_URL + "/lifecoaching"}
+                    component={LifeCoaching}
+                  />
+
+                  <Route
+                    path={process.env.PUBLIC_URL + "/businesscoaching"}
+                    component={BusinessCoaching}
                   />
 
                   <Route

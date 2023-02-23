@@ -722,7 +722,7 @@ a.delicin {
   background: #2d2a2a;
   border-radius: 10px;
   padding: 18px 10px;
-  height: 270px;
+  height: 290px;
   margin-top: 20px;
   p {
     color: #fff;
@@ -730,4 +730,35 @@ a.delicin {
   h3 {
     font-size: 18px;
   }
+}
+
+// business coaching css
+
+section.bg-darkgray {
+  background: #2e2a2a;
+  padding: 50px 0px;
+}
+img.rg-img {
+  border-radius: 12px;
+}
+section.bgb-2 {
+  background: #1c1a1a;
+  padding: 35px 0px;
+}
+.bx-coach img {
+  margin-bottom: 15px;
+}
+ul.lis li {
+  line-height: 35px;
+  color: #fff;
+}
+
+.dtt-t.col-md-12 {
+  padding-top: 60px;
+}
+.grid-1 {
+  background: #160c0c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
 }

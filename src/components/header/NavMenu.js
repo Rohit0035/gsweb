@@ -166,11 +166,51 @@ const NavMenu = ({ strings, menuWhiteClass, sidebarMenu }) => {
               Shop
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/coaching"}>
               {strings["coaching"]}
               Coaching
             </Link>
+          </li> */}
+
+          <li>
+            <Link to={process.env.PUBLIC_URL + "/coaching"}>
+              {strings["coaching"]}
+              {/* {sidebarMenu ? (
+                <span>
+                  <i className="fa fa-angle-right"></i>
+                </span>
+              ) : (
+                <i className="fa fa-angle-down" />
+              )} */}
+              Coaching <i className="fa fa-angle-down" />
+            </Link>
+            <ul className="submenu">
+              <li>
+                <Link to={process.env.PUBLIC_URL + "/businesscoaching"}>
+                  {/* {strings["Business Coaching"]} */}
+                  Business Coaching
+                </Link>
+              </li>
+              <li>
+                <Link to={process.env.PUBLIC_URL + "/lifecoaching"}>
+                  {/* {strings["blog_no_sidebar"]} */}
+                  Life Coaching
+                </Link>
+              </li>
+              <li>
+                <Link to={process.env.PUBLIC_URL + "/healthcoaching"}>
+                  {/* {strings["blog_right_sidebar"]} */}
+                  Health Coaching
+                </Link>
+              </li>
+              {/* <li>
+                <Link to={process.env.PUBLIC_URL + "/blog-details-standard"}>
+                  {strings["blog_details_standard"]}
+                  Health Coaching
+                </Link>
+              </li> */}
+            </ul>
           </li>
           <li>
             <Link to={process.env.PUBLIC_URL + "/about"}>
