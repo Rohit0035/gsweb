@@ -559,12 +559,7 @@ const NavMenu = ({ strings, menuWhiteClass, sidebarMenu }) => {
               {strings["contact_us"]}
             </Link>
           </li>
-          <li>
-            <Link to={process.env.PUBLIC_URL + "/cap"}>
-              {strings["cap"]}
-              Caps
-            </Link>
-          </li>
+         
           {/* <li>
              <a className="darktext" href="http://seller.soxypay.com">
                Seller Login

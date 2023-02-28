@@ -157,7 +157,7 @@
   &.product-tab-fruits {
     a {
       h4 {
-        color: #000000;
+        color: #ffffff;
         border-bottom: 2px solid transparent;
         &:hover {
           color: #6eab49;
@@ -172,7 +172,7 @@
   &.product-tab-pink {
     a {
       h4 {
-        color: #000000;
+        color: #ffffff;
         border-bottom: 2px solid transparent;
         &:hover {
           color: #e90042;
@@ -187,7 +187,7 @@
   &.product-tab-pink2 {
     a {
       h4 {
-        color: #000000;
+        color: #ffffff;
         border-bottom: 2px solid transparent;
         &:hover {
           color: #ed59a0;
@@ -1122,7 +1122,6 @@
   }
 }
 
-
 /*  prodduct 2     */
 
 .tab-filter-wrap {
@@ -1186,13 +1185,13 @@
       color: #555;
       border-bottom: 2px solid transparent;
       &:hover {
-        color: #000000;
+        color: #ffffff;
       }
     }
     &.active {
       h4 {
-        color: #000000;
-        border-bottom: 2px solid #000000;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
       }
     }
   }
@@ -1361,14 +1360,14 @@
     border-radius: 50px;
     background: #dbdbdb none repeat scroll 0 0;
     span {
-      transition: all 0.0s ease 0s;
+      transition: all 0s ease 0s;
     }
     .ui-slider-range {
       position: absolute;
 
       display: block;
 
-      transition: all 0.0s ease 0s;
+      transition: all 0s ease 0s;
 
       border: none;
       background: #1877f2 none repeat scroll 0 0;
@@ -1535,7 +1534,7 @@
         a {
           font-size: 16px;
 
-          color: #000000;
+          color: #ffffff;
           &:hover {
             color: $theme-color;
           }
@@ -1549,7 +1548,7 @@
 
           margin-right: 17px;
 
-          color: #000000;
+          color: #ffffff;
           &.old {
             text-decoration: line-through;
 
@@ -1703,7 +1702,6 @@
   }
 }
 
-
 /* product hm3 */
 
 .section-padding-1 .container-fluid {
@@ -1721,7 +1719,6 @@
     padding: 0 15px;
   }
 }
-
 
 /* product hm4 */
 
@@ -1802,7 +1799,6 @@
     }
   }
 }
-
 
 /* product hm5 */
 
@@ -1984,9 +1980,6 @@
   }
 }
 
-
-
-
 /* product hm6 */
 
 .hm6-section-padding {
@@ -2144,7 +2137,7 @@
 
         margin: 0 24px 0 0;
 
-        color: #000000;
+        color: #ffffff;
         &:before {
           position: absolute;
           top: 12px;
@@ -2216,7 +2209,7 @@
         font-size: 16px;
         font-weight: 500;
 
-        color: #000000;
+        color: #ffffff;
         &:hover {
           color: $theme-color;
         }
@@ -2382,7 +2375,7 @@
 
         margin: 0 8px;
 
-        color: #000000;
+        color: #ffffff;
         &:before {
           position: absolute;
           top: 10px;
@@ -2444,7 +2437,6 @@
     }
   }
 
-
   .product-content {
     flex-basis: calc(100% - 200px);
     h3 {
@@ -2471,7 +2463,7 @@
 
         margin: 0 8px;
 
-        color: #000000;
+        color: #ffffff;
         &:before {
           position: absolute;
           top: 10px;
@@ -2774,7 +2766,6 @@
     }
   }
 
-
   .product-content {
     flex-basis: calc(100% - 200px);
     h3 {
@@ -2801,7 +2792,7 @@
 
         margin: 0 8px;
 
-        color: #000000;
+        color: #ffffff;
         &:before {
           position: absolute;
           top: 10px;
@@ -3103,7 +3094,6 @@
   }
 }
 
-
 .product-wrap-10 {
   position: relative;
 
@@ -3216,7 +3206,7 @@
         a {
           font-size: 18px;
 
-          color: #000000;
+          color: #fff;
           &:hover {
             color: #bca487;
           }
@@ -3291,7 +3281,6 @@
   &:hover .product-action-2 button {
     transform: translateX(0);
   }
-
 
   &--style2 {
     .product-img {
@@ -3396,8 +3385,6 @@
   }
 }
 
-
-
 /* product hm9 */
 
 .hm9-section-padding {
@@ -3489,7 +3476,6 @@
   }
 }
 
-
 /*------- home 14 ----------*/
 
 .product-top-bar {
@@ -3555,7 +3541,7 @@
     margin: 0 20px;
     padding: 0 0 7px;
 
-    color: #000000;
+    color: #ffffff;
     border-bottom: 2px solid transparent;
     &.nav-link {
       padding: 0;
@@ -3582,7 +3568,6 @@
     }
   }
 }
-
 
 .product-tab-list-6 {
   @media #{$xs-layout} {
@@ -3626,7 +3611,7 @@
 
       color: #555;
       &:hover {
-        color: #000000;
+        color: #ffffff;
       }
     }
     &.active {
@@ -3679,7 +3664,7 @@
 
       color: #010101;
       &:hover {
-        color: #000000;
+        color: #ffffff;
       }
     }
     &.active {
@@ -3751,7 +3736,6 @@
   }
 }
 
-
 .pro-view-more {
   margin-top: 30px;
   @media #{$xs-layout} {
@@ -3779,7 +3763,6 @@
     }
   }
 }
-
 
 .bg-png-1 {
   position: absolute;
@@ -3870,4 +3853,14 @@
       }
     }
   }
+}
+
+// filter
+.col-lg-3.pt-2 {
+  border-radius: 10px;
+  padding: 20px;
+}
+.product-wrap-2 .product-img img {
+  position: relative;
+  border-radius: 8px;
 }

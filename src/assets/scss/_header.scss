@@ -29,7 +29,7 @@
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
 
   border-bottom: 0 solid #4a90e2;
-  background-color: #3b3939;
+  background-color: #000000;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
 
   .center-menu-logo {
@@ -357,6 +357,7 @@
           letter-spacing: 0.8px;
 
           color: #ffffff;
+          text-transform: uppercase;
           i {
             font-size: 15px;
 
@@ -681,7 +682,7 @@
             h4 {
               font-size: 15px;
               line-height: 16px;
-
+              color: #000;
               margin: 0;
               margin-right: 20px;
               a {
@@ -695,7 +696,7 @@
             }
             h6 {
               font-size: 13px;
-
+              color: #000;
               margin: 5px 0 8px;
             }
             span {
@@ -721,7 +722,7 @@
       .shopping-cart-total {
         h4 {
           font-size: 14px;
-
+          color: #000;
           margin-top: 17px;
           margin-bottom: 17px;
           span {
@@ -734,7 +735,7 @@
         a {
           font-size: 14px;
           font-weight: 500;
-
+          color: #000;
           display: block;
 
           margin-bottom: 20px;
@@ -2485,3 +2486,4 @@
     display: inline-block;
     padding: 0 12px;
 }
+

@@ -8,6 +8,8 @@ import "../../assets/css/productdetail.css";
 import ProductDescriptionTab from "../../wrappers/product/ProductDescriptionTab";
 import ProductImageDescriptionSticky from "../../wrappers/product/ProductImageDescriptionSticky";
 import Axios from "axios";
+import businessbg from "../../assets/img/business-img.jpg";
+import { Container, Row } from "reactstrap";
 
 export class ProductSticky extends Component {
   constructor(props) {
@@ -33,35 +35,42 @@ export class ProductSticky extends Component {
 
   render() {
     return (
-      <Fragment>
-        <MetaTags>
-          <title>GSD100</title>
-        </MetaTags>
+      <LayoutOne headerTop="visible">
+        <Container fluid className="mb-4">
+          <Row className="mb-5">
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                backgroundImage: `url(${businessbg})`,
+                width: "100%",
+                padding: "100px 0px",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="text-center">
+                <h1 className="text-light text-center">PRODUCT DETAIL </h1>
+                {/* <p style={{ color: "white" }}>
+                  INVEST IN YOUR BUSINESS. MAGNIFY YOUR RESULTS.
+                </p> */}
+              </div>
+            </div>
+          </Row>
+        </Container>
 
-        <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>
-          Home
-        </BreadcrumbsItem>
-        <BreadcrumbsItem>/ Shop Product</BreadcrumbsItem>
+        {/* product description with image */}
+        <ProductImageDescriptionSticky
+          spaceTopclass="mt-100"
+          spaceBottomclass="mb-100"
+          productImage={JSON.stringify(this.state.detail)}
+        />
 
-        <LayoutOne headerTop="visible">
-          {/* breadcrumb */}
-          <Breadcrumb />
-
-          {/* product description with image */}
-          <ProductImageDescriptionSticky
-            spaceTopclass="mt-100"
-            spaceBottomclass="mb-100"
-            productImage={JSON.stringify(this.state.detail)}
-          />
-
-          {/* product description tab */}
-          <ProductDescriptionTab
-            spaceBottomclass="pb-90"
-            productFullDesc={JSON.stringify(this.state.detail)}
-            productid={this.state.pid}
-          />
-        </LayoutOne>
-      </Fragment>
+        {/* product description tab */}
+        <ProductDescriptionTab
+          spaceBottomclass="pb-90"
+          productFullDesc={JSON.stringify(this.state.detail)}
+          productid={this.state.pid}
+        />
+      </LayoutOne>
     );
   }
 }

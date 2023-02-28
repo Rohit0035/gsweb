@@ -12,7 +12,7 @@
 .contact-info-wrap {
   padding: 120px 70px 116px 90px;
 
-  background-color: #f3f3f3;
+  background-color: #1f1e1e;
   @media #{$lg-layout} {
     padding: 120px 20px 116px 40px;
   }
@@ -43,8 +43,8 @@
         transition: all 0.3s ease 0s;
         text-align: center;
 
-        color: #1877f2;
-        border: 1px solid #1877f2;
+        color: #ff9800;
+        border: 1px solid #ff9800;
         border-radius: 100%;
       }
     }
@@ -54,9 +54,9 @@
 
         margin: 0 0 9px;
 
-        color: #404040;
+        color: #fff;
         a {
-          color: #404040;
+          color: #fff;
           &:hover {
             color: $theme-color;
           }
@@ -68,7 +68,7 @@
     }
     &:hover .contact-icon i {
       color: #fff;
-      background-color: #1877f2;
+      background-color: #ff9800;
     }
   }
 }
@@ -82,7 +82,7 @@
 
     margin: 0 0 17px;
 
-    color: #4d4d4d;
+    color: #fff;
   }
   ul {
     li {
@@ -92,7 +92,7 @@
       a {
         font-size: 16px;
 
-        color: #4d4d4d;
+        color: #fff;
         &:hover {
           color: $theme-color;
         }
@@ -104,7 +104,7 @@
 .contact-form {
   padding: 50px 110px 50px 110px;
 
-  background-color: #f3f3f3;
+  background-color: #1f1e1e;
   @media #{$lg-layout} {
     padding: 50px 50px 50px 50px;
   }
@@ -132,7 +132,7 @@
       margin-bottom: 30px;
       padding: 2px 14px;
 
-      color: #000;
+      color: #fff;
       border: 1px solid #c1c1c1;
       background: transparent;
     }

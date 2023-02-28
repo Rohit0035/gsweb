@@ -15,6 +15,9 @@ import ShopTopbar from "../../wrappers/product/ShopTopbar";
 import { useToasts } from "react-toast-notifications";
 // import Axios from "axios";
 import axiosConfig from "../../axiosConfig";
+import { Container, Row } from "reactstrap";
+import businessbg from "../../assets/img/business-img.jpg";
+
 const ShopGridTwoColumn = ({
   location,
   products,
@@ -187,101 +190,107 @@ const ShopGridTwoColumn = ({
   }, []);
 
   return (
-    <Fragment>
-      <MetaTags>
-        <title>GSD100</title>
-        <meta
-          name="description"
-          content="Shop page of flone react minimalist eCommerce template."
-        />
-      </MetaTags>
+    <LayoutOne headerTop="unvisible">
+      {/* breadcrumb */}
 
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + "/"}>Home</BreadcrumbsItem>
-      <BreadcrumbsItem to={process.env.PUBLIC_URL + pathname}>
-        Shop
-      </BreadcrumbsItem>
+      <Container fluid className="mb-4">
+        <Row className="mb-5">
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{
+              backgroundImage: `url(${businessbg})`,
+              width: "100%",
+              padding: "100px 0px",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="text-center">
+              <h1 className="text-light text-center">GSD100 SHOP</h1>
+              <p style={{ color: "white" }}>
+                INVEST IN YOUR BUSINESS. MAGNIFY YOUR RESULTS.
+              </p>
+            </div>
+          </div>
+        </Row>
+      </Container>
 
-      <LayoutOne headerTop="unvisible">
-        {/* breadcrumb */}
-        <Breadcrumb />
+      <div className="shop-area pt-70 pb-100">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-lg-3 pt-2"
+              style={{ backgroundColor: "#040d1e" }}
+            >
+              <ShopSidebar
+                products={products}
+                getSortParams={getSortParams}
+                sideSpaceClass="mr-30"
+                colors={allcolors}
+                sizes={allsizes}
+                category={allcategory}
+                tags={alltags}
+                brand={allbrand}
+                callback={callbackfucntin}
+                tagcallback={tagcallbackfunction}
+                colorcallback={getproductbycolor}
+                sizecallback={getproductbysize}
+                brandcallback={getproductbybrand}
+                pricerange={getproductrangeval}
+              />
+            </div>
+            <div className="col-lg-9">
+              {/* shop topbar default */}
+              <ShopTopbar
+                getLayout={getLayout}
+                getFilterSortParams={getFilterSortParams}
+                productCount={dress.length}
+                sortedProductCount={dress.length}
+              />
 
-        <div className="shop-area pt-95 pb-100">
-          <div className="container">
-            <div className="row">
-              <div
-                className="col-lg-3 pt-2"
-                style={{ backgroundColor: "#E5E8E8" }}
-              >
-                <ShopSidebar
-                  products={products}
-                  getSortParams={getSortParams}
-                  sideSpaceClass="mr-30"
-                  colors={allcolors}
-                  sizes={allsizes}
-                  category={allcategory}
-                  tags={alltags}
-                  brand={allbrand}
-                  callback={callbackfucntin}
-                  tagcallback={tagcallbackfunction}
-                  colorcallback={getproductbycolor}
-                  sizecallback={getproductbysize}
-                  brandcallback={getproductbybrand}
-                  pricerange={getproductrangeval}
-                />
-              </div>
-              <div className="col-lg-9">
-                {/* shop topbar default */}
-                <ShopTopbar
-                  getLayout={getLayout}
-                  getFilterSortParams={getFilterSortParams}
-                  productCount={dress.length}
-                  sortedProductCount={dress.length}
-                />
-
-                {/* shop page content default */}
-                {/* <ShopProducts layout={layout} products={currentData} /> */}
-                <div className="shop-bottom-area mt-35">
-                  <div className={`row ${layout ? layout : ""}`}>
-                    {/* <ProductGridTwo
+              {/* shop page content default */}
+              {/* <ShopProducts layout={layout} products={currentData} /> */}
+              <div className="shop-bottom-area mt-35">
+                <div className={`row ${layout ? layout : ""}`}>
+                  {/* <ProductGridTwo
                       products={products}
                       spaceBottomClass="mb-25"
                     /> */}
-                    <Fragment>
-                      {dress.map((product) => (
+                  <Fragment>
+                    {dress.map((product) => (
+                      <div
+                        className={`col-xl-3 col-md-6 col-lg-4 col-sm-6 ${
+                          sliderClassName ? sliderClassName : ""
+                        }`}
+                        key={product._id}
+                      >
                         <div
-                          className={`col-xl-3 col-md-6 col-lg-4 col-sm-6 ${
-                            sliderClassName ? sliderClassName : ""
-                          }`}
-                          key={product._id}
+                          className={`product-wrap-2 ${
+                            spaceBottomClass ? spaceBottomClass : ""
+                          } ${colorClass ? colorClass : ""} `}
                         >
-                          <div
-                            className={`product-wrap-2 ${
-                              spaceBottomClass ? spaceBottomClass : ""
-                            } ${colorClass ? colorClass : ""} `}
-                          >
-                            <div className="product-img">
-                              <Link
-                                to={
-                                  process.env.PUBLIC_URL +
-                                  "/product-sticky/" +
-                                  product._id
-                                }
-                              >
-                                <img
-                                  className="default-img"
-                                  src={product.product_img[0]}
-                                  alt=""
-                                  style={{ width: "200px", height: "250px" }}
-                                />
+                          <div className="product-img">
+                            <Link
+                              to={
+                                process.env.PUBLIC_URL +
+                                "/product-sticky/" +
+                                product._id
+                              }
+                            >
+                              <img
+                                className="default-img"
+                                src={product.product_img[0]}
+                                alt=""
+                                style={{ width: "200px", height: "250px" }}
+                              />
 
-                                <img
-                                  className="hover-img"
-                                  src={product.product_img[1]}
-                                  alt=""
-                                  style={{ width: "200px", height: "250px" }}
-                                />
-                              </Link>
-                              {/* {product.discount || product.new ? (
+                              <img
+                                className="hover-img"
+                                src={product.product_img[1]}
+                                alt=""
+                                style={{ width: "200px", height: "250px" }}
+                              />
+                            </Link>
+                            {/* {product.discount || product.new ? (
                 <div className="product-img-badges">
                   {product.discount ? (
                     <span className="pink">-{product.discount}</span>
@@ -294,8 +303,8 @@ const ShopGridTwoColumn = ({
                 ""
               )} */}
 
-                              <div className="product-action-2">
-                                {/* {product.affiliateLink ? (
+                            <div className="product-action-2">
+                              {/* {product.affiliateLink ? (
                                   <a
                                     href={product.affiliateLink}
                                     rel="noopener noreferrer"
@@ -344,7 +353,7 @@ const ShopGridTwoColumn = ({
                                     <i className="fa fa-shopping-cart"></i>
                                   </button>
                                 )} */}
-                                {/* 
+                              {/* 
                                 <button
                                   onClick={() => setModalShow(true)}
                                   title="Quick View"
@@ -352,7 +361,7 @@ const ShopGridTwoColumn = ({
                                   <i className="fa fa-eye"></i>
                                 </button> */}
 
-                                {/* <button
+                              {/* <button
                                   className={
                                     compareItem !== undefined ? "active" : ""
                                   }
@@ -368,32 +377,32 @@ const ShopGridTwoColumn = ({
                                 >
                                   <i className="fa fa-retweet"></i>
                                 </button> */}
+                            </div>
+                          </div>
+                          <div className="product-content-2">
+                            <div
+                              className={`title-price-wrap-2 ${
+                                titlePriceClass ? titlePriceClass : ""
+                              }`}
+                            >
+                              <h3>
+                                <Link
+                                  to={
+                                    process.env.PUBLIC_URL +
+                                    "/product/" +
+                                    product._id
+                                  }
+                                >
+                                  {product.product_name}
+                                </Link>
+                              </h3>
+                              <div className="price-2">
+                                <Fragment>
+                                  <span>₹ {product.sell_price}</span>
+                                </Fragment>
                               </div>
                             </div>
-                            <div className="product-content-2">
-                              <div
-                                className={`title-price-wrap-2 ${
-                                  titlePriceClass ? titlePriceClass : ""
-                                }`}
-                              >
-                                <h3>
-                                  <Link
-                                    to={
-                                      process.env.PUBLIC_URL +
-                                      "/product/" +
-                                      product._id
-                                    }
-                                  >
-                                    {product.product_name}
-                                  </Link>
-                                </h3>
-                                <div className="price-2">
-                                  <Fragment>
-                                    <span>₹ {product.sell_price}</span>
-                                  </Fragment>
-                                </div>
-                              </div>
-                              {/* <div className="pro-wishlist-2">
+                            {/* <div className="pro-wishlist-2">
                                 <button
                                   className={
                                     wishlistItem !== undefined ? "active" : ""
@@ -411,13 +420,13 @@ const ShopGridTwoColumn = ({
                                   <i className="fa fa-heart-o" />
                                 </button>
                               </div> */}
-                            </div>
                           </div>
                         </div>
-                      ))}
+                      </div>
+                    ))}
 
-                      {/* product modal */}
-                      {/* <ProductModal
+                    {/* product modal */}
+                    {/* <ProductModal
                         show={modalShow}
                         onHide={() => setModalShow(false)}
                         product={product}
@@ -431,30 +440,29 @@ const ShopGridTwoColumn = ({
                         addtocompare={addToCompare}
                         addtoast={addToast}
                       /> */}
-                    </Fragment>
-                  </div>
+                  </Fragment>
                 </div>
+              </div>
 
-                {/* shop product pagination */}
-                <div className="pro-pagination-style text-center mt-30">
-                  <Paginator
-                    totalRecords={dress.length}
-                    pageLimit={pageLimit}
-                    pageNeighbours={2}
-                    setOffset={setOffset}
-                    currentPage={currentPage}
-                    setCurrentPage={setCurrentPage}
-                    pageContainerClass="mb-0 mt-0"
-                    pagePrevText="«"
-                    pageNextText="»"
-                  />
-                </div>
+              {/* shop product pagination */}
+              <div className="pro-pagination-style text-center mt-30">
+                <Paginator
+                  totalRecords={dress.length}
+                  pageLimit={pageLimit}
+                  pageNeighbours={2}
+                  setOffset={setOffset}
+                  currentPage={currentPage}
+                  setCurrentPage={setCurrentPage}
+                  pageContainerClass="mb-0 mt-0"
+                  pagePrevText="«"
+                  pageNextText="»"
+                />
               </div>
             </div>
           </div>
         </div>
-      </LayoutOne>
-    </Fragment>
+      </div>
+    </LayoutOne>
   );
 };
 

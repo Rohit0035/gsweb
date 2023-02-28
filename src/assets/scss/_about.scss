@@ -4,7 +4,7 @@
   h5 {
     font-weight: 500;
     font-size: 16px;
-    color: #666;
+    color: #fff;
     margin: 0;
     letter-spacing: 0.3px;
   }
@@ -13,7 +13,7 @@
     font-weight: 500;
     letter-spacing: 0.3px;
     margin: 8px 0 30px;
-    color: #433f3f;
+    color: #fff;
     position: relative;
     display: inline-block;
     padding: 0 0 23px;
@@ -32,7 +32,7 @@
   }
   p {
     font-size: 16px;
-    color: #4b4b4b;
+    color: #fff;
     line-height: 30px;
     width: 66%;
     margin: 0 auto;
@@ -191,4 +191,13 @@
       padding-bottom: 60px;
     }
   }
+}
+
+// css
+
+.shadow.p-4.mb-5.mr-2.bg-black.rounded {
+  background: #161616 !important;
+}
+.shadow.p-4.mb-5.bg-black.rounded.jumbotron {
+  background: #161616 !important;
 }
