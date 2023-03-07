@@ -44,18 +44,18 @@ const ShopPrice = ({ tags, getSortParams,priceobj }) => {
   };
   return (
     <div className="sidebar-widget mt-50">
-      <h4 className="pro-sidebar-title">Price Range </h4>
+      <h4 className="pro-sidebar-titl  bot-b">Price Range </h4>
       <div className="sidebar-widget-tag mt-25">
-      <Box >
-      <Slider
-        getAriaLabel={() => 'Price range'}
-        value={value}
-        scale={(i) => 25*i }
-        onChange={handleChange}
-        valueLabelDisplay="auto"
-        getAriaValueText={valuetext}
-      />
-    </Box>
+        <Box>
+          <Slider
+            getAriaLabel={() => "Price range"}
+            value={value}
+            scale={i => 25 * i}
+            onChange={handleChange}
+            valueLabelDisplay="auto"
+            getAriaValueText={valuetext}
+          />
+        </Box>
       </div>
     </div>
   );

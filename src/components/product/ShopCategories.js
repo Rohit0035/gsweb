@@ -2,16 +2,15 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { setActiveSort } from "../../helpers/product";
 
-const ShopCategories = ({ categories, getSortParams,cb }) => {
-
+const ShopCategories = ({ categories, getSortParams, cb }) => {
   // const [selectedcategory, setSelectedcategory] = useState('')
   // const sendData = () => {
   //   cb(selectedcategory);
   // };
   return (
-    <div className="sidebar-widget">
-      <h4 className="pro-sidebar-title">Categories </h4>
-      <div className="sidebar-widget-list mt-30">
+    <div className="sidebar-widget mt-4">
+      <h4 className="pro-sidebar-title bot-b">Categories </h4>
+      <div className="sidebar-widget-list mt-30 ">
         {categories ? (
           <ul>
             <li>
@@ -33,7 +32,7 @@ const ShopCategories = ({ categories, getSortParams,cb }) => {
                     <button
                       onClick={e => {
                         console.log(category._id);
-                        cb(category._id)
+                        cb(category._id);
                         getSortParams("category", category);
                         setActiveSort(e);
                       }}
@@ -56,7 +55,7 @@ const ShopCategories = ({ categories, getSortParams,cb }) => {
 
 ShopCategories.propTypes = {
   categories: PropTypes.array,
-  getSortParams: PropTypes.func
+  getSortParams: PropTypes.func,
 };
 
 export default ShopCategories;

@@ -2,7 +2,8 @@
 
 .single-my-account {
   margin-bottom: 20px;
-  border: 1px solid #ebebeb;
+  // border: 1px solid #ebebeb;
+  background-color: #1f1f1f;
   .panel-heading {
     padding: 0;
     & > button {
@@ -60,7 +61,7 @@
   }
   .myaccount-info-wrapper {
     padding: 30px 20px;
-    background-color: #fff;
+    background-color: #1f1f1f;
     .account-info-wrapper {
       border-bottom: 1px solid #eaeaea;
       margin-bottom: 28px;
@@ -79,14 +80,16 @@
     .billing-info {
       margin-bottom: 20px;
       label {
-        color: #000;
+        color: #ccc;
         font-size: 14px;
         text-transform: capitalize;
       }
       input {
-        background: transparent none repeat scroll 0 0;
-        border: 1px solid #ebebeb;
-        color: #000;
+        // background: transparent none repeat scroll 0 0;
+        // border: 1px solid #ebebeb;
+        border: none;
+        background-color: #000;
+        color: #ccc;
         height: 40px;
         padding: 0 15px;
       }

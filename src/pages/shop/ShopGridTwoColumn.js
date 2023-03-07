@@ -55,7 +55,7 @@ const ShopGridTwoColumn = ({
   const pageLimit = 16;
   const { pathname } = location;
 
-  const getLayout = (layout) => {
+  const getLayout = layout => {
     setLayout(layout);
   };
 
@@ -117,7 +117,7 @@ const ShopGridTwoColumn = ({
     // console.log(address);
     // setUseraddress(address)
   };
-  const getproductbytagname = async (name) => {
+  const getproductbytagname = async name => {
     const { data } = await axiosConfig.get(
       `/admin/getproductbytagname/${name}`
     );
@@ -125,19 +125,19 @@ const ShopGridTwoColumn = ({
     setDress(data.data);
   };
 
-  const getproductbycolor = async (id) => {
+  const getproductbycolor = async id => {
     console.log(id);
     const { data } = await axiosConfig.get(`/admin/productbycolor/${id}`);
     console.log(data.data);
     setDress(data.data);
   };
-  const getproductbysize = async (id) => {
+  const getproductbysize = async id => {
     console.log(id);
     const { data } = await axiosConfig.get(`/admin/productbysize/${id}`);
     console.log(data.data);
     setDress(data.data);
   };
-  const getproductbybrand = async (id) => {
+  const getproductbybrand = async id => {
     console.log(id);
     const { data } = await axiosConfig.get(`/admin/productbybrand/${id}`);
     console.log(data.data);
@@ -154,16 +154,16 @@ const ShopGridTwoColumn = ({
     setDress(data.data);
   };
 
-  const callbackfucntin = (childData) => {
+  const callbackfucntin = childData => {
     // callback(childData)
     console.log(childData);
   };
-  const tagcallbackfunction = (tagname) => {
+  const tagcallbackfunction = tagname => {
     // callback(childData)
     console.log(tagname);
     getproductbytagname(tagname);
   };
-  const getproductrangeval = (value) => {
+  const getproductrangeval = value => {
     // callback(childData)
     console.log(value);
 
@@ -256,7 +256,7 @@ const ShopGridTwoColumn = ({
                       spaceBottomClass="mb-25"
                     /> */}
                   <Fragment>
-                    {dress.map((product) => (
+                    {dress.map(product => (
                       <div
                         className={`col-xl-3 col-md-6 col-lg-4 col-sm-6 ${
                           sliderClassName ? sliderClassName : ""
@@ -280,14 +280,14 @@ const ShopGridTwoColumn = ({
                                 className="default-img"
                                 src={product.product_img[0]}
                                 alt=""
-                                style={{ width: "200px", height: "250px" }}
+                                style={{ width: "200px", height: "180px" }}
                               />
 
                               <img
                                 className="hover-img"
                                 src={product.product_img[1]}
                                 alt=""
-                                style={{ width: "200px", height: "250px" }}
+                                style={{ width: "200px", height: "180px" }}
                               />
                             </Link>
                             {/* {product.discount || product.new ? (
@@ -421,6 +421,16 @@ const ShopGridTwoColumn = ({
                                 </button>
                               </div> */}
                           </div>
+                          <div class="product-rating">
+                            <i class="fa fa-star-o yellow"></i>
+                            <i class="fa fa-star-o yellow"></i>
+                            <i class="fa fa-star-o yellow"></i>
+                            <i class="fa fa-star-o yellow"></i>
+                            <i class="fa fa-star-o yellow"></i>
+                          </div>
+                          <div className="">
+                            <button className="ct-btn">ADD TO CART</button>
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -471,7 +481,7 @@ ShopGridTwoColumn.propTypes = {
   products: PropTypes.array,
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     products: state.productData.products,
   };

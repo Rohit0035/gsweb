@@ -2,18 +2,16 @@ import PropTypes from "prop-types";
 import React from "react";
 import { setActiveSort } from "../../helpers/product";
 const dot = {
-    height: "25px",
-    width: "25px",
-    borderRadius: "50%",
-    display: "inline-block",
-  
-}
+  height: "25px",
+  width: "25px",
+  borderRadius: "50%",
+  display: "inline-block",
+};
 
-const ShopColor = ({ colors, getSortParams,getonecolor }) => {
-  
+const ShopColor = ({ colors, getSortParams, getonecolor }) => {
   return (
     <div className="sidebar-widget mt-50">
-      <h4 className="pro-sidebar-title">Color </h4>
+      <h4 className="pro-sidebar-title bot-b">Color </h4>
       <div className="sidebar-widget-list mt-20">
         {colors ? (
           <ul>
@@ -35,14 +33,22 @@ const ShopColor = ({ colors, getSortParams,getonecolor }) => {
                   <div className="sidebar-widget-list-left">
                     <button
                       onClick={e => {
-                        getonecolor(color._id)
-                        console.log(color._id)
+                        getonecolor(color._id);
+                        console.log(color._id);
                         getSortParams("color", color);
                         setActiveSort(e);
                       }}
                     >
-                      <span className="checkmark" /><span style={{backgroundColor: color?.colorName,borderRadius: "50%",height: 25,
-    width: 25}}></span> {color?.colorName}{" "}
+                      <span className="checkmark" />
+                      <span
+                        style={{
+                          backgroundColor: color?.colorName,
+                          borderRadius: "50%",
+                          height: 25,
+                          width: 25,
+                        }}
+                      ></span>{" "}
+                      {color?.colorName}{" "}
                     </button>
                   </div>
                 </li>
@@ -59,7 +65,7 @@ const ShopColor = ({ colors, getSortParams,getonecolor }) => {
 
 ShopColor.propTypes = {
   colors: PropTypes.array,
-  getSortParams: PropTypes.func
+  getSortParams: PropTypes.func,
 };
 
 export default ShopColor;

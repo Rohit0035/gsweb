@@ -13,20 +13,17 @@ const IconGroup = ({
   compareData,
   deleteFromCart,
   iconWhiteClass,
-  
 }) => {
   const handleClick = (e) => {
     e.currentTarget.nextSibling.classList.toggle("active");
   };
 
   const handleLogout = (e) => {
-    window.localStorage.clear()
+    window.localStorage.clear();
     // window.location.reload()
     // window.location.replace("http://localhost:3000/");
-     window.location.replace("http://44.205.32.29/");
-
+    window.location.replace("http://44.205.32.29/");
   };
-
 
   const triggerMobileMenu = () => {
     const offcanvasMobileMenu = document.querySelector(
@@ -38,14 +35,11 @@ const IconGroup = ({
   const [carts, setCarts] = useState([]);
   //const { id } = useParams();
   const fetchcarts = async (token) => {
-    const { data } = await axiosConfig.get(
-      `/admin/cartbycustomer`,
-      {
-        headers: {
-          "auth-token": localStorage.getItem("auth-token"),
-        },
-      }
-    );
+    const { data } = await axiosConfig.get(`/admin/cartbycustomer`, {
+      headers: {
+        "auth-token": localStorage.getItem("auth-token"),
+      },
+    });
     const carts = data.data;
     setCarts(carts);
     console.log(carts);
@@ -59,14 +53,11 @@ const IconGroup = ({
 
   const [wish, setWish] = useState([]);
   const fetchWish = async () => {
-    const { data } = await axiosConfig.get(
-      "/admin/getallwishlist",
-      {
-        headers: {
-          "auth-token": localStorage.getItem("auth-token"),
-        },
-      }
-    );
+    const { data } = await axiosConfig.get("/admin/getallwishlist", {
+      headers: {
+        "auth-token": localStorage.getItem("auth-token"),
+      },
+    });
     const wish = data.data;
     setWish(wish);
     console.log(wish);
@@ -76,33 +67,29 @@ const IconGroup = ({
       fetchWish();
     }
   }, []);
-  
-// account
-const [customer, setCustomer] = useState([]);
-const fetchCustomer = async () => {
-  const { data } = await axiosConfig.get(
-    "/user/getonecustomer",
-    {
+
+  // account
+  const [customer, setCustomer] = useState([]);
+  const fetchCustomer = async () => {
+    const { data } = await axiosConfig.get("/user/getonecustomer", {
       headers: {
         "auth-token": localStorage.getItem("auth-token"),
       },
+    });
+    const customer = data.data;
+    setCustomer(customer);
+    console.log(customer);
+  };
+  useEffect(() => {
+    if (localStorage.getItem("auth-token")) {
+      fetchCustomer();
     }
-  );
-  const customer = data.data;
-  setCustomer(customer);
-  console.log(customer);
-};
-useEffect(() => {
-  if (localStorage.getItem("auth-token")) {
-    fetchCustomer();
-  }
-}, []);
+  }, []);
 
   return (
     <div
       className={`header-right-wrap ${iconWhiteClass ? iconWhiteClass : ""}`}
     >
-
       {/* <div className="same-style header-search d-none d-lg-block">
         <button className="search-active" onClick={(e) => handleClick(e)}>
           <i className="pe-7s-search" />
@@ -121,7 +108,7 @@ useEffect(() => {
           className="account-setting-active usricon"
           onClick={(e) => handleClick(e)}
         >
-           <i className="pe-7s-user usn-1" />
+          <i className="pe-7s-user usn-1" />
           <span> {customer?.firstname}</span>
         </button>
         <div className="account-dropdown">
@@ -143,33 +130,34 @@ useEffect(() => {
               <>
                 <li>
                   <Link>
-                    UserId :  <span className="usid">{customer.customerId}</span>
+                    UserId : <span className="usid">{customer.customerId}</span>
                   </Link>
                 </li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/myOrder"}>My Order</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to={process.env.PUBLIC_URL + "/wallet"}>
                     {string["wallet"]}Wallet</Link>
                 </li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/orderrecharge"}>Recharge</Link>
-                </li>
-              
+                </li> */}
+
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/my-account"}>
                     My Account
                   </Link>
                 </li>
                 <li>
-                  <Link to={process.env.PUBLIC_URL + "/"}
+                  <Link
+                    to={process.env.PUBLIC_URL + "/"}
                     // onClick={(e) =>{(
                     //   window.localStorage.clear()
-                      
+
                     //   //localStorage.removeItem("auth-token","userInfo")
                     // )}
-                    onClick = {(e) => handleLogout()}
+                    onClick={(e) => handleLogout()}
                     //}
                   >
                     Logout

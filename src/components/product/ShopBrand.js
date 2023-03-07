@@ -5,7 +5,7 @@ import { setActiveSort } from "../../helpers/product";
 const ShopBrand = ({ brands, getSortParams,getonebrand }) => {
   return (
     <div className="sidebar-widget mt-50">
-      <h4 className="pro-sidebar-title">Brand </h4>
+      <h4 className="pro-sidebar-title bot-b">Brand </h4>
       <div className="sidebar-widget-tag mt-25">
         {brands ? (
           <ul>
@@ -13,8 +13,8 @@ const ShopBrand = ({ brands, getSortParams,getonebrand }) => {
               return (
                 <li key={key}>
                   <button
-                    onClick={(e) => {
-                      getonebrand(brands._id)
+                    onClick={e => {
+                      getonebrand(brands._id);
                       getSortParams("brands", brands);
                       setActiveSort(e);
                     }}
